@@ -15,29 +15,32 @@ It reads a directed weighted graph from `input.txt`, computes the shortest paths
 
 ## 📁 Project Structure
 
-
+```text
 ├── src/
 │   └── dijkstra.c     # Main C program logic
 ├── input.txt          # Input file for the graph data
 ├── output.txt         # Results generated automatically after execution
 └── README.md
+```
 
-📥 Input Format (input.txt)
+## 📥 Input Format (input.txt)
 
 The input file must be strictly formatted.
-First Line: The source node for Dijkstra’s algorithm.
-Subsequent Lines: A list of arcs defined by S D W.
 
-Parameters Definition
+1.  **First Line**: The **source node** for Dijkstra’s algorithm.
+2.  **Subsequent Lines**: A list of arcs defined by `S D W`.
 
-Parameter	     Description
-source_node 	Starting node for Dijkstra’s algorithm (First line only)
-S	            Source node of the arc
-D	            Destination node of the arc
-W	            Weight (non-negative cost of the arc)
+### Parameters Definition
 
-Example Input
+| Parameter | Description |
+| :--- | :--- |
+| **source_node** | Starting node for Dijkstra’s algorithm (First line only) |
+| **S** | Source node of the arc |
+| **D** | Destination node of the arc |
+| **W** | Weight (non-negative cost of the arc) |
 
+### Example Input
+```
 0
 0 1 4
 0 2 2
@@ -45,41 +48,57 @@ Example Input
 1 3 10
 2 4 3
 4 3 4
+```
 
-📤 Output Format (output.txt)
+## 📤 Output Format (output.txt)
+
 The program outputs the distance and shortest path from the source to every reachable node.
-Example Output
-code
-Text
+
+### Example Output
+```
 Chemin de 0 a 0 (distance=0) : 0
 Chemin de 0 a 1 (distance=4) : 0 -> 1
 Chemin de 0 a 2 (distance=2) : 0 -> 2
 Chemin de 0 a 3 (distance=9) : 0 -> 2 -> 4 -> 3
 Chemin de 0 a 4 (distance=5) : 0 -> 2 -> 4
+```
 
-🚀 Usage
-🛠️ Compilation
+## 🚀 Usage
+
+### 🛠️ Compilation
+
 Compile the program using GCC:
+
+```bash
 gcc src/dijkstra.c -o dijkstra
+```
 
-▶️ Execution
-Run the program (ensure input.txt exists in the project root):
+### ▶️ Execution
 
-Linux / macOS:
+Run the program (ensure `input.txt` exists in the project root):
+
+**Linux / macOS:**
+```
 ./dijkstra
+```
 
-Windows:
+**Windows:**
+```
 dijkstra.exe
+```
 
-The program will automatically generate or overwrite output.txt.
+> The program will automatically generate or overwrite `output.txt`.
 
-📌 Use Cases
-🎓 Data structures & algorithms coursework
-📊 Graph theory demonstrations
-🌐 Pathfinding and network routing
-📘 Dijkstra implementation reference
+## 📌 Use Cases
 
-🧑‍💻 Author
-Wiame El-Amimri
-Student in SDSI
+- 🎓 Data structures & algorithms coursework
+- 📊 Graph theory demonstrations
+- 🌐 Pathfinding and network routing
+- 📘 Dijkstra implementation reference
+
+## 🧑‍💻 Author
+
+**Wiame El-Amimri**  
+Student in **SDSI**  
 📍 FST Fès – 2025
+```
