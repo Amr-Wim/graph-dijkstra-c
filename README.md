@@ -39,9 +39,9 @@ Parameter	Description
 
 source_node	Starting node for Dijkstra’s algorithm
 
-S	Source node of the arc
-D	Destination node
-W	Weight (non-negative cost of the arc)
+S	 Source node of the arc
+D	 Destination node
+W	 Weight (non-negative cost of the arc)
 
 
 Example Input
