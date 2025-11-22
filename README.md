@@ -58,7 +58,7 @@ Example Input
 The program outputs the distance and shortest path from the source to every reachable node:
 
 Example Output
-Chemin de 0 a 0 (distance=0) : 0/t
+Chemin de 0 a 0 (distance=0) : 0
 Chemin de 0 a 1 (distance=4) : 0 -> 1
 Chemin de 0 a 2 (distance=2) : 0 -> 2
 Chemin de 0 a 3 (distance=9) : 0 -> 2 -> 4 -> 3
